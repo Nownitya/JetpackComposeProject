@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JetpackComposeProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".tip_time_starter.TipTimeInitialActivity"
+            android:exported="true"
+            android:label="@string/title_activity_tip_time_initial"
+            android:theme="@style/Theme.JetpackComposeProject" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lemonade_app.LemonadeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_lemonade"
+            android:theme="@style/Theme.JetpackComposeProject">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".dice_roller_app.DiceRollerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dice_roller"
+            android:theme="@style/Theme.JetpackComposeProject">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".business_card.BusinessCardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_business_card"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".compose_quadrant.ComposeQuadrantActivity"
+            android:exported="false"
+            android:label="@string/title_activity_compose_quadrant"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".task_manager.TaskManagerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_task_completed"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".compose_article.ComposeArticleActivity"
+            android:exported="false"
+            android:label="@string/title_activity_jetpack_compose_tutorial"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".birthday_card.BirthdayCardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_birthday_card"
+            android:theme="@style/Theme.JetpackComposeProject">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.JetpackComposeProject">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>
