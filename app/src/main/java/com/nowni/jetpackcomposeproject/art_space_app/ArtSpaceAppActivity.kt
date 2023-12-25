@@ -22,7 +22,7 @@ class ArtSpaceAppActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting2("Android ")
+                    Greeting2("Android")
                 }
             }
         }
