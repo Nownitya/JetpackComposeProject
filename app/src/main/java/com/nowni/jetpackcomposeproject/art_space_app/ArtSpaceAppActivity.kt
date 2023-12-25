@@ -10,13 +10,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.nowni.jetpackcomposeproject.art_space_app.ui.theme.JetpackComposeProjectTheme
+import com.nowni.jetpackcomposeproject.art_space_app.ui.theme.ArtSpaceAppTheme
 
 class ArtSpaceAppActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetpackComposeProjectTheme {
+            ArtSpaceAppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -37,10 +37,12 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true,
+    showSystemUi = true,
+    name = "Art Space App")
 @Composable
 fun GreetingPreview3() {
-    JetpackComposeProjectTheme {
+    ArtSpaceAppTheme {
         Greeting2("Android")
     }
 }
