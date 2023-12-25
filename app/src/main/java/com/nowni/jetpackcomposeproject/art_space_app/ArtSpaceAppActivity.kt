@@ -175,20 +175,25 @@ fun ImageDetailAndPainter(
 }
 
 @Composable
-fun PrevAndNextButtons(modifier: Modifier = Modifier) {
+fun PrevAndNextButtons(
+    onPreviousButton: () -> Unit,
+    onNextButton: () ->Unit,
+    modifier: Modifier = Modifier
+) {
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .padding(start = 25.dp, end = 25.dp, top = 30.dp, bottom = 50.dp),
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Button(onClick = { /*TODO*/ }) {
+        Button(onClick = { onPreviousButton }) {
             Text(
                 text = "Previous", textAlign = TextAlign.Center, modifier = modifier.width(80.dp)
             )
         }
 
-        Button(onClick = { /*TODO*/ }) {
+        Button(onClick = { onNextButton }) {
             Text(
                 text = "Next",
                 textAlign = TextAlign.Center,
