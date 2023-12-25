@@ -31,5 +31,9 @@
     <string name="round_up_tip">Round up tip?</string>
     <string name="title_activity_art_space_app">ArtSpaceAppActivity</string>
 
+    <string name="image_desp_1">Still Life of Blue Rose and Other Flowers</string>
+    <string name="painters_name_1">Owen Scott</string>
+    <string name="painting_year_1">2021</string>
+
 
 </resources>
