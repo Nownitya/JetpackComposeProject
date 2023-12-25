@@ -13,9 +13,9 @@
         android:theme="@style/Theme.JetpackComposeProject"
         tools:targetApi="31">
         <activity
-            android:name=".tip_time_final.TipTimeFinalActivity"
+            android:name=".art_space_app.ArtSpaceAppActivity"
             android:exported="true"
-            android:label="@string/title_activity_tip_time_final"
+            android:label="@string/title_activity_art_space_app"
             android:theme="@style/Theme.JetpackComposeProject">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,15 +24,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".tip_time_starter.TipTimeInitialActivity"
+            android:name=".tip_time_final.TipTimeFinalActivity"
             android:exported="true"
-            android:label="@string/title_activity_tip_time_initial"
+            android:label="@string/title_activity_tip_time_final"
             android:theme="@style/Theme.JetpackComposeProject">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".tip_time_starter.TipTimeInitialActivity"
+            android:exported="true"
+            android:label="@string/title_activity_tip_time_initial"
+            android:theme="@style/Theme.JetpackComposeProject">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".lemonade_app.LemonadeActivity"
