@@ -82,7 +82,7 @@ fun ArtSpaceAppLayout() {
             painterName = R.string.painters_name_1,
             paintingYear = R.string.painting_year_1
         )
-        PrevAndNextButtons()
+        PrevAndNextButtons(onPreviousButton = { }, onNextButton = {  })
 
     }
 
