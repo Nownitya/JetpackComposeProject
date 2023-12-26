@@ -158,7 +158,7 @@ fun UserDetail(icon: Painter, text: String, modifier: Modifier = Modifier) {
             text = text,
             fontSize = 18.sp,
             fontFamily = FontFamily.Monospace,
-            modifier = Modifier.padding(start = 20.dp)
+            modifier = modifier.padding(start = 20.dp)
         )
     }
 }

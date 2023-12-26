@@ -2,11 +2,27 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="AffirmationPreview">
+        <State />
+      </entry>
       <entry key="TipCalculatorUiTest">
         <State />
       </entry>
       <entry key="app">
-        <State />
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="COLD_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\nowni\.android\avd\Medium_Phone_API_32.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-02-04T14:56:25.285437900Z" />
+        </State>
       </entry>
       <entry key="calculate_20_percentage_tip()">
         <State />

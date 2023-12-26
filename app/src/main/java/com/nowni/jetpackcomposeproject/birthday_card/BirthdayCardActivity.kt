@@ -83,7 +83,7 @@ fun BirthdayCardImage(message:String, from: String, modifier: Modifier = Modifie
         BirthdayText(
             message = message,
             from = from,
-            modifier = Modifier
+            modifier = modifier
                 .fillMaxSize()
                 .padding(8.dp)
         )

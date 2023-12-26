@@ -13,26 +13,58 @@
         android:theme="@style/Theme.JetpackComposeProject"
         tools:targetApi="31">
         <activity
+            android:name=".super_heroes.HeroesScreen"
+            android:exported="false"
+            android:label="@string/title_activity_superheroes"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".woof.WoofActivity"
+            android:exported="false"
+            android:label="@string/title_activity_woof"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".courses.CoursesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_courses"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".affirmations_initial_app.AffirmationsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_affirmations"
+            android:theme="@style/Theme.JetpackComposeProject">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
             android:name=".art_space_app.ArtSpaceAppActivity"
             android:exported="true"
             android:label="@string/title_activity_art_space_app"
             android:theme="@style/Theme.JetpackComposeProject">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".tip_time_final.TipTimeFinalActivity"
             android:exported="true"
             android:label="@string/title_activity_tip_time_final"
             android:theme="@style/Theme.JetpackComposeProject">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".tip_time_starter.TipTimeInitialActivity"
@@ -108,17 +140,14 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-
+            android:exported="true"
+            android:label="@string/app_name"
             android:theme="@style/Theme.JetpackComposeProject">
-            <!--            android:label="@string/app_name"-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
