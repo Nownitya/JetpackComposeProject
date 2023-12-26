@@ -70,7 +70,7 @@ class ArtSpaceAppActivity : ComponentActivity() {
 fun ArtSpaceAppLayout() {
     val state = rememberScrollState()
     LaunchedEffect(Unit) { state.animateScrollTo(100) }
-    val contexts = LocalContext.current
+//    val contexts = LocalContext.current
     Column(
         modifier = Modifier
             .fillMaxSize()
