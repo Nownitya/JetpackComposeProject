@@ -1,6 +1,8 @@
 package com.nowni.jetpackcomposeproject.art_space_app
 
+import android.content.Context
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.DrawableRes
@@ -33,6 +35,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
@@ -67,6 +70,7 @@ class ArtSpaceAppActivity : ComponentActivity() {
 fun ArtSpaceAppLayout() {
     val state = rememberScrollState()
     LaunchedEffect(Unit) { state.animateScrollTo(100) }
+    val contexts = LocalContext.current
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -82,7 +86,12 @@ fun ArtSpaceAppLayout() {
             painterName = R.string.painters_name_1,
             paintingYear = R.string.painting_year_1
         )
-        PrevAndNextButtons(onPreviousButton = { }, onNextButton = {  })
+        PrevAndNextButtons(onPreviousButton = {
+//            Toast.makeText(contexts, "Previous", Toast.LENGTH_SHORT).show()
+
+        }, onNextButton = {
+//            Toast.makeText(contexts, "Next", Toast.LENGTH_SHORT).show()
+        })
 
     }
 
@@ -180,6 +189,7 @@ fun PrevAndNextButtons(
     onNextButton: () ->Unit,
     modifier: Modifier = Modifier
 ) {
+    val context = LocalContext.current
 
     Row(
         modifier = Modifier
@@ -187,20 +197,33 @@ fun PrevAndNextButtons(
             .padding(start = 25.dp, end = 25.dp, top = 30.dp, bottom = 50.dp),
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Button(onClick = { onPreviousButton }) {
+        Button(onClick = {
+            onPreviousButton()
+            showToast(context,"Previous")
+        }) {
             Text(
-                text = "Previous", textAlign = TextAlign.Center, modifier = modifier.width(80.dp)
+                text = "Previous",
+                textAlign = TextAlign.Center,
+                modifier = modifier.width(80.dp)
             )
+//            Toast.makeText(context, "Previous", Toast.LENGTH_SHORT).show()
         }
 
-        Button(onClick = { onNextButton }) {
+        Button(onClick = { onNextButton()
+        showToast(context,"Next")
+        }) {
             Text(
                 text = "Next",
                 textAlign = TextAlign.Center,
                 modifier = modifier.width(80.dp),
             )
+//            Toast.makeText(context, "Next", Toast.LENGTH_SHORT).show()
         }
     }
+}
+
+internal fun showToast(context: Context, message: String) {
+    Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
 }
 
 
