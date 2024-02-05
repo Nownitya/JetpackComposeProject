@@ -1,15 +1,15 @@
 package com.nowni.jetpackcomposeproject.super_heroes
 
-import android.annotation.SuppressLint
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalAnimationApi
-import androidx.compose.animation.core.*
+import androidx.compose.animation.core.MutableTransitionState
 import androidx.compose.animation.core.Spring.DampingRatioLowBouncy
 import androidx.compose.animation.core.Spring.StiffnessVeryLow
+import androidx.compose.animation.core.spring
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInVertically
@@ -186,7 +186,9 @@ fun HeroesListItem(hero:HeroesList , modifier: Modifier = Modifier) {
 
 
 @Preview(
-    showBackground = true, showSystemUi = true, name = "Superheroes_Light"
+    showBackground = true,
+    showSystemUi = true,
+    name = "Superheroes_Light"
 )
 @Composable
 fun SuperheroesLPreview1() {
@@ -199,7 +201,9 @@ fun SuperheroesLPreview1() {
 }
 
 @Preview(
-    showBackground = true, showSystemUi = true, name = "Superheroes_Dark",
+    showBackground = true,
+    showSystemUi = true,
+    name = "Superheroes_Dark",
     uiMode = Configuration.UI_MODE_NIGHT_YES, device = Devices.DEFAULT
 )
 @Composable

@@ -19,7 +19,8 @@ object AppDataSource2 {
         AppLists(11, R.string.activity_courses_app),
         AppLists(12, R.string.activity_affirmation_app),
         AppLists(13, R.string.activity_woof_app),
-        AppLists(14,R.string.super_heroes)
+        AppLists(14,R.string.super_heroes),
+        AppLists(15,R.string.dessert_clicker_initial),
     )
 }
 

@@ -1,6 +1,7 @@
 package com.nowni.jetpackcomposeproject
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -34,10 +35,10 @@ import com.nowni.jetpackcomposeproject.business_card.BusinessCardActivity
 import com.nowni.jetpackcomposeproject.compose_article.ComposeArticleActivity
 import com.nowni.jetpackcomposeproject.compose_quadrant.ComposeQuadrantActivity
 import com.nowni.jetpackcomposeproject.courses.CoursesActivity
+import com.nowni.jetpackcomposeproject.dessert_clicker_initial.DessertClickerInitialActivity
 import com.nowni.jetpackcomposeproject.dice_roller_app.DiceRollerActivity
 import com.nowni.jetpackcomposeproject.lemonade_app.LemonadeActivity
 import com.nowni.jetpackcomposeproject.super_heroes.HeroesScreen
-import com.nowni.jetpackcomposeproject.super_heroes.HeroesScreenApp
 import com.nowni.jetpackcomposeproject.task_manager.TaskManagerActivity
 import com.nowni.jetpackcomposeproject.tip_time_final.TipTimeFinalActivity
 import com.nowni.jetpackcomposeproject.tip_time_starter.TipTimeInitialActivity
@@ -125,6 +126,7 @@ fun ComposeProjectList(appList: List<AppLists>, modifier: Modifier = Modifier) {
                         12 -> AffirmationsActivity::class.java
                         13 -> WoofActivity::class.java
                         14 -> HeroesScreen::class.java
+                        15 -> DessertClickerInitialActivity::class.java
                         else -> null
                     }
                     activityClass?.let {
@@ -143,14 +145,36 @@ fun ComposeProjectList(appList: List<AppLists>, modifier: Modifier = Modifier) {
  */
 
 @Preview(
-    showBackground = true, showSystemUi = true, name = "Compose Project"
+    showBackground = true,
+    showSystemUi = true,
+    name = "Compose Project",
 )
 @Composable
-fun GreetingPreview() {
-    JetpackComposeProjectTheme {
-//        val appList = AppList(R.string.activity_birthday_card_app)
+fun AppsPreview1() {
+    JetpackComposeProjectTheme(darkTheme = false) {
+        Surface {
+            //        val appList = AppList(R.string.activity_birthday_card_app)
 //        ComposeProjectLayout(appList = appList)
-        ComposeProjectApp()
+            ComposeProjectApp()
+        }
+
+    }
+}
+
+@Preview(
+    showBackground = true,
+    showSystemUi = true,
+    name = "Compose Project",
+    uiMode = Configuration.UI_MODE_NIGHT_YES
+)
+@Composable
+fun AppsPreview2() {
+    JetpackComposeProjectTheme {
+        Surface {
+            //        val appList = AppList(R.string.activity_birthday_card_app)
+//        ComposeProjectLayout(appList = appList)
+            ComposeProjectApp()
+        }
 
     }
 }
