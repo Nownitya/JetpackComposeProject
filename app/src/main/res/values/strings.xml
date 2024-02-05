@@ -74,9 +74,9 @@
     <string name="activity_courses_app">Course</string>
     <string name="activity_dice_roller_app">Dice Roller</string>
     <string name="activity_lemonade_app">Lemonade</string>
-    <string name="activity_task_manager_app">TipTime-Final</string>
-    <string name="activity_tip_time_final_app">TipTime-Starter</string>
-    <string name="activity_tip_time_starter_app">Affirmations</string>
+    <string name="activity_task_manager_app">Task Manager</string>
+    <string name="activity_tip_time_final_app">TipTime-Final</string>
+    <string name="activity_tip_time_starter_app">TipTime-Starter</string>
 
 
     <string name="activity_woof_app">Woof</string>
