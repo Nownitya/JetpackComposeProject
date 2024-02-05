@@ -13,22 +13,27 @@
         android:theme="@style/Theme.JetpackComposeProject"
         tools:targetApi="31">
         <activity
-            android:name=".super_heroes.HeroesScreen"
+            android:name=".apps_list.dessert_clicker_initial.DesertClickerIActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dessert_clicker_iactivity"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".apps_list.super_heroes.HeroesScreen"
             android:exported="false"
             android:label="@string/title_activity_superheroes"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".woof.WoofActivity"
+            android:name=".apps_list.woof.WoofActivity"
             android:exported="false"
             android:label="@string/title_activity_woof"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".courses.CoursesActivity"
+            android:name=".apps_list.courses.CoursesActivity"
             android:exported="false"
             android:label="@string/title_activity_courses"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".affirmations_initial_app.AffirmationsActivity"
+            android:name=".apps_list.affirmations_initial_app.AffirmationsActivity"
             android:exported="true"
             android:label="@string/title_activity_affirmations"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -41,7 +46,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".art_space_app.ArtSpaceAppActivity"
+            android:name=".apps_list.art_space_app.ArtSpaceAppActivity"
             android:exported="true"
             android:label="@string/title_activity_art_space_app"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -54,7 +59,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".tip_time_final.TipTimeFinalActivity"
+            android:name=".apps_list.tip_time_final.TipTimeFinalActivity"
             android:exported="true"
             android:label="@string/title_activity_tip_time_final"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -67,7 +72,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".tip_time_starter.TipTimeInitialActivity"
+            android:name=".apps_list.tip_time_starter.TipTimeInitialActivity"
             android:exported="true"
             android:label="@string/title_activity_tip_time_initial"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -80,7 +85,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".lemonade_app.LemonadeActivity"
+            android:name=".apps_list.lemonade_app.LemonadeActivity"
             android:exported="true"
             android:label="@string/title_activity_lemonade"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -93,7 +98,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".dice_roller_app.DiceRollerActivity"
+            android:name=".apps_list.dice_roller_app.DiceRollerActivity"
             android:exported="false"
             android:label="@string/title_activity_dice_roller"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -106,27 +111,27 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".business_card.BusinessCardActivity"
+            android:name=".apps_list.business_card.BusinessCardActivity"
             android:exported="false"
             android:label="@string/title_activity_business_card"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".compose_quadrant.ComposeQuadrantActivity"
+            android:name=".apps_list.compose_quadrant.ComposeQuadrantActivity"
             android:exported="false"
             android:label="@string/title_activity_compose_quadrant"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".task_manager.TaskManagerActivity"
+            android:name=".apps_list.task_manager.TaskManagerActivity"
             android:exported="false"
             android:label="@string/title_activity_task_completed"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".compose_article.ComposeArticleActivity"
+            android:name=".apps_list.compose_article.ComposeArticleActivity"
             android:exported="false"
             android:label="@string/title_activity_jetpack_compose_tutorial"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".birthday_card.BirthdayCardActivity"
+            android:name=".apps_list.birthday_card.BirthdayCardActivity"
             android:exported="false"
             android:label="@string/title_activity_birthday_card"
             android:theme="@style/Theme.JetpackComposeProject">

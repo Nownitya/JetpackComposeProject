@@ -27,22 +27,23 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.nowni.jetpackcomposeproject.affirmations_initial_app.AffirmationsActivity
-import com.nowni.jetpackcomposeproject.art_space_app.ArtSpaceAppActivity
-import com.nowni.jetpackcomposeproject.birthday_card.BirthdayCardActivity
-import com.nowni.jetpackcomposeproject.business_card.BusinessCardActivity
-import com.nowni.jetpackcomposeproject.compose_article.ComposeArticleActivity
-import com.nowni.jetpackcomposeproject.compose_quadrant.ComposeQuadrantActivity
-import com.nowni.jetpackcomposeproject.courses.CoursesActivity
-import com.nowni.jetpackcomposeproject.dice_roller_app.DiceRollerActivity
-import com.nowni.jetpackcomposeproject.lemonade_app.LemonadeActivity
-import com.nowni.jetpackcomposeproject.super_heroes.HeroesScreen
-import com.nowni.jetpackcomposeproject.super_heroes.HeroesScreenApp
-import com.nowni.jetpackcomposeproject.task_manager.TaskManagerActivity
-import com.nowni.jetpackcomposeproject.tip_time_final.TipTimeFinalActivity
-import com.nowni.jetpackcomposeproject.tip_time_starter.TipTimeInitialActivity
+import com.nowni.jetpackcomposeproject.apps_list.affirmations_initial_app.AffirmationsActivity
+import com.nowni.jetpackcomposeproject.apps_list.art_space_app.ArtSpaceAppActivity
+import com.nowni.jetpackcomposeproject.apps_list.birthday_card.BirthdayCardActivity
+import com.nowni.jetpackcomposeproject.apps_list.business_card.BusinessCardActivity
+import com.nowni.jetpackcomposeproject.apps_list.compose_article.ComposeArticleActivity
+import com.nowni.jetpackcomposeproject.apps_list.compose_quadrant.ComposeQuadrantActivity
+import com.nowni.jetpackcomposeproject.apps_list.courses.CoursesActivity
+import com.nowni.jetpackcomposeproject.apps_list.dessert_clicker_initial.DessertClickerIActivity
+import com.nowni.jetpackcomposeproject.apps_list.dice_roller_app.DiceRollerActivity
+import com.nowni.jetpackcomposeproject.apps_list.lemonade_app.LemonadeActivity
+import com.nowni.jetpackcomposeproject.apps_list.super_heroes.HeroesScreen
+import com.nowni.jetpackcomposeproject.apps_list.super_heroes.HeroesScreenApp
+import com.nowni.jetpackcomposeproject.apps_list.task_manager.TaskManagerActivity
+import com.nowni.jetpackcomposeproject.apps_list.tip_time_final.TipTimeFinalActivity
+import com.nowni.jetpackcomposeproject.apps_list.tip_time_starter.TipTimeInitialActivity
 import com.nowni.jetpackcomposeproject.ui.theme.JetpackComposeProjectTheme
-import com.nowni.jetpackcomposeproject.woof.WoofActivity
+import com.nowni.jetpackcomposeproject.apps_list.woof.WoofActivity
 import com.nowni.jetpackcomposeproject.zdata.AppDataSource2
 import com.nowni.jetpackcomposeproject.zmodel.AppLists
 
@@ -125,6 +126,7 @@ fun ComposeProjectList(appList: List<AppLists>, modifier: Modifier = Modifier) {
                         12 -> AffirmationsActivity::class.java
                         13 -> WoofActivity::class.java
                         14 -> HeroesScreen::class.java
+                        15 -> DessertClickerIActivity::class.java
                         else -> null
                     }
                     activityClass?.let {
