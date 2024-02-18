@@ -44,8 +44,8 @@ import com.nowni.jetpackcomposeproject.apps_list1.tip_time_final.TipTimeFinalAct
 import com.nowni.jetpackcomposeproject.apps_list1.tip_time_starter.TipTimeInitialActivity
 import com.nowni.jetpackcomposeproject.ui.theme.JetpackComposeProjectTheme
 import com.nowni.jetpackcomposeproject.apps_list1.woof.WoofActivity
-import com.nowni.jetpackcomposeproject.zdata.AppDataSource2
-import com.nowni.jetpackcomposeproject.zmodel.AppLists
+import com.nowni.jetpackcomposeproject.data.AppDataSource2
+import com.nowni.jetpackcomposeproject.model.AppLists
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

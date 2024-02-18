@@ -1,4 +1,4 @@
-package com.nowni.jetpackcomposeproject.zmodel
+package com.nowni.jetpackcomposeproject.model
 
 import androidx.annotation.StringRes
 

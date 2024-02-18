@@ -1,8 +1,8 @@
-package com.nowni.jetpackcomposeproject.zdata
+package com.nowni.jetpackcomposeproject.data
 
 import com.nowni.jetpackcomposeproject.R
-import com.nowni.jetpackcomposeproject.zmodel.AppList
-import com.nowni.jetpackcomposeproject.zmodel.AppLists
+import com.nowni.jetpackcomposeproject.model.AppList
+import com.nowni.jetpackcomposeproject.model.AppLists
 
 object AppDataSource2 {
     val appLists = listOf(
