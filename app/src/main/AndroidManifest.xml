@@ -13,27 +13,32 @@
         android:theme="@style/Theme.JetpackComposeProject"
         tools:targetApi="31">
         <activity
-            android:name=".dessert_clicker_initial.DessertClickerInitialActivity"
+            android:name=".apps_list.consultants_1.ConsultantsOneActivity"
+            android:exported="false"
+            android:label="@string/title_activity_consultants_one"
+            android:theme="@style/Theme.JetpackComposeProject" />
+        <activity
+            android:name=".apps_list2.dessert_clicker_initial.DessertClickerInitialActivity"
             android:exported="false"
             android:label="@string/title_activity_dessert_clicker_initial"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".super_heroes.HeroesScreen"
+            android:name=".apps_list1.super_heroes.HeroesScreen"
             android:exported="false"
             android:label="@string/title_activity_superheroes"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".woof.WoofActivity"
+            android:name=".apps_list1.woof.WoofActivity"
             android:exported="false"
             android:label="@string/title_activity_woof"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".courses.CoursesActivity"
+            android:name=".apps_list1.courses.CoursesActivity"
             android:exported="false"
             android:label="@string/title_activity_courses"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".affirmations_initial_app.AffirmationsActivity"
+            android:name=".apps_list1.affirmations_initial_app.AffirmationsActivity"
             android:exported="true"
             android:label="@string/title_activity_affirmations"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -46,7 +51,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".art_space_app.ArtSpaceAppActivity"
+            android:name=".apps_list1.art_space_app.ArtSpaceAppActivity"
             android:exported="true"
             android:label="@string/title_activity_art_space_app"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -59,7 +64,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".tip_time_final.TipTimeFinalActivity"
+            android:name=".apps_list1.tip_time_final.TipTimeFinalActivity"
             android:exported="true"
             android:label="@string/title_activity_tip_time_final"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -72,7 +77,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".tip_time_starter.TipTimeInitialActivity"
+            android:name=".apps_list1.tip_time_starter.TipTimeInitialActivity"
             android:exported="true"
             android:label="@string/title_activity_tip_time_initial"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -85,7 +90,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".lemonade_app.LemonadeActivity"
+            android:name=".apps_list1.lemonade_app.LemonadeActivity"
             android:exported="true"
             android:label="@string/title_activity_lemonade"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -98,7 +103,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".dice_roller_app.DiceRollerActivity"
+            android:name=".apps_list1.dice_roller_app.DiceRollerActivity"
             android:exported="false"
             android:label="@string/title_activity_dice_roller"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -111,27 +116,27 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".business_card.BusinessCardActivity"
+            android:name=".apps_list1.business_card.BusinessCardActivity"
             android:exported="false"
             android:label="@string/title_activity_business_card"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".compose_quadrant.ComposeQuadrantActivity"
+            android:name=".apps_list1.compose_quadrant.ComposeQuadrantActivity"
             android:exported="false"
             android:label="@string/title_activity_compose_quadrant"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".task_manager.TaskManagerActivity"
+            android:name=".apps_list1.task_manager.TaskManagerActivity"
             android:exported="false"
             android:label="@string/title_activity_task_completed"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".compose_article.ComposeArticleActivity"
+            android:name=".apps_list1.compose_article.ComposeArticleActivity"
             android:exported="false"
             android:label="@string/title_activity_jetpack_compose_tutorial"
             android:theme="@style/Theme.JetpackComposeProject" />
         <activity
-            android:name=".birthday_card.BirthdayCardActivity"
+            android:name=".apps_list1.birthday_card.BirthdayCardActivity"
             android:exported="false"
             android:label="@string/title_activity_birthday_card"
             android:theme="@style/Theme.JetpackComposeProject">
@@ -146,7 +151,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-
             android:theme="@style/Theme.JetpackComposeProject">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -154,7 +158,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        android:label="@string/app_name"-->
     </application>
 
 </manifest>

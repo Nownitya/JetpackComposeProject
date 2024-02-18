@@ -122,6 +122,11 @@
 
     <string name="title_activity_dessert_clicker_initial">DessertClickerInitialActivity</string>
     <string name="dessert_clicker_initial">Dessert Clicker-Initial</string>
+    <string name="dessert_sold">Dessert Sold</string>
+    <string name="total_revenue">Total Revenue</string>
+    <string name="share_text">I\'ve clicked %1$d Desserts for a total of $%2$d #AndroidDessertClicker</string>
+    <string name="sharing_not_available">Sharing Not Available</string>
+    <string name="title_activity_consultants_one">ConsultantsOneActivity</string>
 
 
 </resources>

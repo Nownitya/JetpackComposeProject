@@ -6,8 +6,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performTextInput
-import com.nowni.jetpackcomposeproject.tip_time_final.TipTimeFinalApp
-import com.nowni.jetpackcomposeproject.tip_time_final.ui.theme.TipTimeFinalTheme
+import com.nowni.jetpackcomposeproject.apps_list1.tip_time_final.TipTimeFinalApp
+import com.nowni.jetpackcomposeproject.apps_list1.tip_time_final.ui.theme.TipTimeFinalTheme
 import org.junit.Rule
 import org.junit.Test
 import java.text.NumberFormat

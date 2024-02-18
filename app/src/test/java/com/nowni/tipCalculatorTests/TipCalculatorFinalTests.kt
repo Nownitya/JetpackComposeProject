@@ -1,6 +1,6 @@
 package com.nowni.tipCalculatorTests
 
-import com.nowni.jetpackcomposeproject.tip_time_final.tipCalculate
+import com.nowni.jetpackcomposeproject.apps_list1.tip_time_final.tipCalculate
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
 import java.text.NumberFormat
