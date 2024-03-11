@@ -46,8 +46,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.content.ContextCompat
 import com.nowni.jetpackcomposeproject.R
+import com.nowni.jetpackcomposeproject.apps_list2.dessert_clicker_initial.data.DataSourceDessert
 import com.nowni.jetpackcomposeproject.apps_list2.dessert_clicker_initial.model.Dessert
 import com.nowni.jetpackcomposeproject.apps_list2.dessert_clicker_initial.ui.theme.DessertTheme
+import javax.sql.DataSource
 
 private const val TAG = "DessertClickerInitialActivity"
 
@@ -61,6 +63,7 @@ class DessertClickerInitialActivity : ComponentActivity() {
                 Surface(
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
                 ) {
+                    DessertClickerApp(desserts = DataSourceDessert.dessertList)
 
                 }
             }
@@ -98,6 +101,22 @@ class DessertClickerInitialActivity : ComponentActivity() {
     }
 }
 
+fun determineDessertToShow(
+    desserts: List<Dessert>,
+    dessertsSold: Int
+): Dessert {
+
+    var dessertToShow = desserts.first()
+    for (dessert in desserts) {
+        if (dessertsSold >= dessert.startProductionAmount) {
+            dessertToShow = dessert
+        } else {
+            break
+        }
+    }
+    return dessertToShow
+}
+
 private fun shareSoldDessertsInformation(
     intentContext: Context, dessertsSold: Int, revenue: Int
 ) {
@@ -122,27 +141,13 @@ private fun shareSoldDessertsInformation(
     }
 }
 
-fun determineDessertToShow(
-    desserts: List<Dessert>,
-    dessertsSold: Int
-): Dessert {
-
-    var dessertToShow = desserts.first()
-    for (dessert in desserts) {
-        if (dessertsSold >= dessert.startProductionAmount) {
-            dessertToShow = dessert
-        } else {
-            break
-        }
-    }
-    return dessertToShow
-}
-
 @Composable
 fun DessertClickerApp(
     desserts: List<Dessert>
 ) {
     var revenue by rememberSaveable { mutableStateOf(0) }
+//    var revenue by remember { mutableStateOf(0) }
+
     var dessertSold by rememberSaveable { mutableStateOf(0) }
 
     val currentDessertIndex by rememberSaveable { mutableStateOf(0) }
@@ -154,6 +159,9 @@ fun DessertClickerApp(
     var currentDessertImageId by rememberSaveable {
         mutableStateOf(desserts[currentDessertIndex].imageId)
     }
+//    var currentDessertImageId by remember {
+//        mutableStateOf(desserts[currentDessertIndex].imageId)
+//    }
 
     Scaffold(topBar = {
         val intentContent = LocalContext.current
@@ -331,12 +339,12 @@ fun DessertPreviewLight() {
 //            DessertSoldInfo(dessertSold = R.string.dessert_sold)
 //            RevenueInfo(revenue = 444)
 //            TransactionInfo(revenue = 44, dessertSold = 7)
-            DessertClickerScreen(revenue = 44,
-                dessertsSold = 4,
-                dessertImageId = R.drawable.cupcake,
-                onDessertClicked = { /*TODO*/ })
-            DessertClickerAppBar(onShareButtonClicked = { /*TODO*/ })
-
+//            DessertClickerScreen(revenue = 44,
+//                dessertsSold = 4,
+//                dessertImageId = R.drawable.cupcake,
+//                onDessertClicked = { /*TODO*/ })
+//            DessertClickerAppBar(onShareButtonClicked = { /*TODO*/ })
+            DessertClickerApp(desserts = DataSourceDessert.dessertList)
 
         }
     }
@@ -349,7 +357,13 @@ fun DessertPreviewLight() {
 fun DessertPreviewDark() {
     DessertTheme {
         Surface {
-            DessertSoldInfo(dessertSold = R.string.dessert_sold)
+//            DessertSoldInfo(dessertSold = R.string.dessert_sold)
+//            DessertClickerScreen(revenue = 44,
+//                dessertsSold = 4,
+//                dessertImageId = R.drawable.cupcake,
+//                onDessertClicked = { /*TODO*/ })
+//            DessertClickerAppBar(onShareButtonClicked = { /*TODO*/ })
+            DessertClickerApp(desserts = DataSourceDessert.dessertList)
 
         }
     }

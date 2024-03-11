@@ -16,12 +16,12 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\nowni\.android\avd\Pixel_7_Pro_API_32.avd" />
+                  <value value="C:\Users\nowni\.android\avd\Pixel_6a_API_32.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-02-05T19:38:49.093044100Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-02-18T03:43:24.969563Z" />
         </State>
       </entry>
       <entry key="calculate_20_percentage_tip()">
