@@ -5,6 +5,9 @@
       <entry key="AffirmationPreview">
         <State />
       </entry>
+      <entry key="MainActivity">
+        <State />
+      </entry>
       <entry key="TipCalculatorUiTest">
         <State />
       </entry>
@@ -23,9 +26,6 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-02-18T03:43:24.969563Z" />
         </State>
-      </entry>
-      <entry key="calculate_20_percentage_tip()">
-        <State />
       </entry>
     </value>
   </component>
