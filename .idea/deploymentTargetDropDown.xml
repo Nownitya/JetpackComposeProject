@@ -5,8 +5,30 @@
       <entry key="AffirmationPreview">
         <State />
       </entry>
+      <entry key="MainActivity">
+        <State />
+      </entry>
       <entry key="TipCalculatorUiTest">
         <State />
+      </entry>
+      <entry key="UnscrambleInitialActivity">
+        <State />
+      </entry>
+      <entry key="UnscrambleLight">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\nowni\.android\avd\Pixel_6a_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-15T05:34:29.796262100Z" />
+        </State>
       </entry>
       <entry key="app">
         <State>
@@ -23,9 +45,6 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-02-18T03:43:24.969563Z" />
         </State>
-      </entry>
-      <entry key="calculate_20_percentage_tip()">
-        <State />
       </entry>
     </value>
   </component>
