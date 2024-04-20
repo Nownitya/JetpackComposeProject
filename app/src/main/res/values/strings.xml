@@ -141,7 +141,14 @@
     <string name="exit">Exit</string>
     <string name="play_again">Play Again</string>
     <string name="wrong_guess">Wrong Guess!</string>
+    <string name="title_activity_dessert_clicker_view_model">DessertClicker_ViewModelActivity
+    </string>
 
+    <string name="dessert_clicker_viewmodel">Dessert Clicker-ViewModel</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_open_street_map_main">OpenStreetMapMainActivity</string>
+    <string name="open_street_map_one">Open Street Map</string>
 
 
 </resources>
