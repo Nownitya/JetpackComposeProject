@@ -44,6 +44,7 @@ import com.nowni.jetpackcomposeproject.apps_list1.tip_time_final.TipTimeFinalAct
 import com.nowni.jetpackcomposeproject.apps_list1.tip_time_starter.TipTimeInitialActivity
 import com.nowni.jetpackcomposeproject.ui.theme.JetpackComposeProjectTheme
 import com.nowni.jetpackcomposeproject.apps_list1.woof.WoofActivity
+import com.nowni.jetpackcomposeproject.apps_list2.unscramble_initial.UnscrambleInitialActivity
 import com.nowni.jetpackcomposeproject.data.AppDataSource2
 import com.nowni.jetpackcomposeproject.model.AppLists
 
@@ -127,6 +128,7 @@ fun ComposeProjectList(appList: List<AppLists>, modifier: Modifier = Modifier) {
                         13 -> WoofActivity::class.java
                         14 -> HeroesScreen::class.java
                         15 -> DessertClickerInitialActivity::class.java
+                        16 -> UnscrambleInitialActivity::class.java
                         else -> null
                     }
                     activityClass?.let {

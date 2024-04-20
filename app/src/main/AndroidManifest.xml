@@ -14,14 +14,16 @@
         tools:targetApi="31">
         <activity
             android:name=".apps_list2.unscramble_initial.UnscrambleInitialActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_unscramble_initial"
-            android:theme="@style/Theme.JetpackComposeProject" />
-        <activity
-            android:name=".apps_list.consultants_1.ConsultantsOneActivity"
-            android:exported="false"
-            android:label="@string/title_activity_consultants_one"
-            android:theme="@style/Theme.JetpackComposeProject" />
+            android:theme="@style/Theme.JetpackComposeProject" >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
         <activity
             android:name=".apps_list2.dessert_clicker_initial.DessertClickerInitialActivity"
             android:exported="false"
