@@ -6,6 +6,9 @@ buildscript {
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
     }
+    dependencies {
+        classpath("com.github.jitpack:gradle-simple:1.0")
+    }
 
 }
 plugins {
